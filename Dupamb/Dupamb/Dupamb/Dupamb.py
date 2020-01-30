@@ -15,7 +15,7 @@ Created on Thu Jan 30 14:29:17 2020
 import pandas as pd
 class Dupamb:
     def __init__(self,filename,header=None):
-        self.data = pd.read_csv('da.csv',header=header)
+        self.data = pd.read_csv(filename,header=header)
         self.d = self.data.iloc[:,:].values
         self.head = self.d[0,:]
         self.d = self.d[1:,:]
